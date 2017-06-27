@@ -13,9 +13,13 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+        'App\Events\PhoneEvent' => [
+            'App\Listeners\PhoneEventListener',
         ],
+        'App\Events\SitemapEvent' => [
+            'App\Listeners\SitemapEventListener',
+        ],
+
     ];
 
     /**

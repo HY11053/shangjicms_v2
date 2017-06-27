@@ -27,7 +27,7 @@ class AddFlagsToArchivesTable extends Migration
     public function down()
     {
         Schema::table('archives', function (Blueprint $table) {
-            //
+            $table->dropColumn('flags');
         });
     }
 }
