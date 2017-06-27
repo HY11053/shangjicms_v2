@@ -33,25 +33,25 @@
                                     @if($loop->index>6)
                                         @break
                                     @endif
-                                <li><!-- start message -->
+                                    <li><!-- start message -->
 
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                        </div>
-                                        <h4>
-                                            邮件信息
-                                            <small><i class="fa fa-clock-o"></i>{{\Carbon\Carbon::parse($notification['created_at'])->diffForHumans()}}</small>
-                                        </h4>
-                                        <p>{{$notification['name']}}--{{$notification['created_at']}}已发送</p>
-                                    </a>
-                                </li>
-                                @endforeach
-                                <!-- end message -->
+                                        <a href="#">
+                                            <div class="pull-left">
+                                                <img src="/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                                邮件信息
+                                                <small><i class="fa fa-clock-o"></i>{{\Carbon\Carbon::parse($notification['created_at'])->diffForHumans()}}</small>
+                                            </h4>
+                                            <p>{{$notification['name']}}--{{$notification['created_at']}}已发送</p>
+                                        </a>
+                                    </li>
+                            @endforeach
+                            <!-- end message -->
 
                             </ul>
                         </li>
-                        <li class="footer"><a href="/admin/clearnotification">清除所有通知信息</a></li>
+                        <li class="footer"><a href="#">See All Messages</a></li>
                     </ul>
                 </li>
                 <!-- Notifications: style can be found in dropdown.less -->
@@ -78,7 +78,7 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li class="footer"><a href="/admin/clearnotification">清除所有通知信息</a></li>
+                        <li class="footer"><a href="#">View all</a></li>
                     </ul>
                 </li>
                 <!-- Tasks: style can be found in dropdown.less -->
