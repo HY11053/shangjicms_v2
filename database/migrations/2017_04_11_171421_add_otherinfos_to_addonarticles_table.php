@@ -15,9 +15,9 @@ class AddOtherinfosToAddonarticlesTable extends Migration
     {
         Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->string('licenseno')->default('');
-            $table->string('bdxg_search')->default('');
-            $table->string('registeredcapital')->default('');
+            $table->string('licenseno')->nullable();
+            $table->string('bdxg_search')->nullable();
+            $table->string('registeredcapital')->nullable();
         });
     }
 

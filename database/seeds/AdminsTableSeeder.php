@@ -11,8 +11,8 @@ class AdminsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory('App\AdminModel\Admin',10)->create([
-            'password' => bcrypt('ysgppAdmin@')
+        factory('App\AdminModel\Admin',1)->create([
+            'password' => bcrypt('Linux3306')
         ]);
     }
 }

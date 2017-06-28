@@ -15,12 +15,12 @@ class AddTitlesToArchivesTable extends Migration
     {
         Schema::table('archives', function (Blueprint $table) {
             //
-            $table->string('ppjstitle')->default('');
-            $table->string('jmxqtitle')->default('');
-            $table->string('jmystitle')->default('');
-            $table->string('jmlctitle')->default('');
-            $table->string('jmzctitle')->default('');
-            $table->string('jmasktitle')->default('');
+            $table->string('ppjstitle')->nullable();
+            $table->string('jmxqtitle')->nullable();
+            $table->string('jmystitle')->nullable();
+            $table->string('jmlctitle')->nullable();
+            $table->string('jmzctitle')->nullable();
+            $table->string('jmasktitle')->nullable();
 
         });
     }

@@ -20,15 +20,15 @@ class CreateArctypesTable extends Migration
             $table->integer('sortrank');
             $table->string('typename');
             $table->string('typedir');
-            $table->string('title');
-            $table->string('description');
-            $table->string('keywords');
+            $table->string('title')->nullable();
+            $table->string('description')->nullable();
+            $table->string('keywords')->nullable();
             $table->smallInteger('dirposition')->default(1);
             $table->integer('is_write');
             $table->string('real_path')->default('');
             $table->string('litpic')->default('');
-            $table->string('typeimages')->default('');
-            $table->string('contents')->default('');
+            $table->string('typeimages')->nullable();
+            $table->string('contents')->nullable();
             $table->timestamps();
         });
     }

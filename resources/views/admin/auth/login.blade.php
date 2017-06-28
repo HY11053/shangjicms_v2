@@ -43,7 +43,7 @@
                             <div class="col-md-6">
                                 <input id="pcaptcha" type="text" class="form-control" name="captcha" required>
 
-                                <a id="refresh-capthca"><img src="{{captcha_src()}}"
+                                <a id="refresh-capthca"><img style="cursor: pointer" src="{{captcha_src()}}"
                                                              alt="验证码"
                                                              title="点击刷新图片"
                                                              width="160"

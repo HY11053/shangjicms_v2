@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
         <urlset><url>
-        <loc>http://www.larstycms.com</loc>
+        <loc>http://www.lar54.com</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        </url></urlset>
+        </url><url>
+                <loc>http://www.lar54.com/chaohuodian/</loc>
+                <changefreq>daily</changefreq>                
+                <priority>1.0</priority>
+            </url><url>
+                <loc>http://www.lar54.com/chaohuodian/4.shtml</loc>
+                <lastmod>2017-06-28</lastmod>
+                <changefreq>daily</changefreq>
+                <priority>1.0</priority>
+            </url></urlset>

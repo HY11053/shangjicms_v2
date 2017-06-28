@@ -28,7 +28,7 @@ class CreateArticleRequest extends FormRequest
             'shorttitle'=>'required|max:20',
             //'tags'=>'required|max:20',
             'ismake'=>'required|numeric',
-            'published_at'=>'date',
+            //'published_at'=>'date',
             'mid'=>'numeric',
             'decorationpay'=>'numeric',
             'quartersrent'=>'numeric',
@@ -40,7 +40,8 @@ class CreateArticleRequest extends FormRequest
             'unitprice'=>'numeric',
             'watercoal'=>'numeric',
             'body'=>'required',
-            'image'=> 'mimes:jpeg,jpg,gif,bmp,png|image'
+            'image'=> 'mimes:jpeg,jpg,gif,bmp,png|image',
+            'typeid'=>'required|numeric'
         ];
     }
 }

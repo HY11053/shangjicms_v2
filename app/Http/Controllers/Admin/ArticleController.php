@@ -110,7 +110,6 @@ class ArticleController extends Controller
         auth('admin')->user()->notify(new ArticlePublishedNofication(Archive::latest() ->first()));
         //百度主动推送
         $thisarticle=Archive::where('id',Archive::max('id'))->find(Archive::max('id'));
-
         $thisarticleurl=env('APP_URL').'/'.$thisarticle->arctype->real_path.'/'.$thisarticle->id.'.shtml';
         if($request->original!=1)
         {
@@ -291,7 +290,7 @@ class ArticleController extends Controller
      */
     function Brands()
     {
-        $articles=Archive::where('mid',1)->where('dutyadmin',auth('admin')->user()->id)->latest()->paginate(30);
+        $articles=Archive::where('mid',1)/*->where('dutyadmin',auth('admin')->user()->id)*/->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
     /*

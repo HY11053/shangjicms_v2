@@ -83,5 +83,6 @@ class FlinkController extends Controller
     function DeleteFlink($id)
     {
         flink::find($id)->delete();
+        return redirect(action('Admin\FlinkController@Index'));
     }
 }

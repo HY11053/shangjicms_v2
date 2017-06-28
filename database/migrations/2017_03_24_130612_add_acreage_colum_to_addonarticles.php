@@ -15,8 +15,8 @@ class AddAcreageColumToAddonarticles extends Migration
     {
         Schema::table('addonarticles', function (Blueprint $table) {
             //
-            $table->string('acreage')->default('');
-            $table->string('genre')->default('');
+            $table->string('acreage')->nullable();
+            $table->string('genre')->nullable();
         });
     }
 
